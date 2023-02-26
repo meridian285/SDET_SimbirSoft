@@ -3,7 +3,7 @@ package com.saucedemo.core;
 import org.openqa.selenium.WebDriver;
 
 /**
- Базовый класс для всех page классов
+ Base class for all page classes
  */
 
 public abstract class BasePage {
