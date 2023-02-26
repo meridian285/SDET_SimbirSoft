@@ -23,6 +23,6 @@ public interface ConfigProvider {
     String LAST_NAME = readConfig().getString("dataForChecks.checkoutYourInformation.lastName");
     String POSTAL_CODE = readConfig().getString("dataForChecks.checkoutYourInformation.postalCod");
     //data for order completion checks
-    String URL_COMPLETED_ORDER = readConfig().getString("dataForChecks.checkout.urlCompletedPage");
-    String MESSAGE_COMPLETED_ORDER = readConfig().getString("dataForChecks.checkout.messageCompletedPage");
+    String URL_COMPLETED_ORDER = readConfig().getString("dataForChecks.verifySuccessfulPurchase.urlCompletedPage");
+    String MESSAGE_COMPLETED_ORDER = readConfig().getString("dataForChecks.verifySuccessfulPurchase.messageCompletedPage");
 }
