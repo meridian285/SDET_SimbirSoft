@@ -14,3 +14,4 @@ Used dependencies:
 - slf4j-log4j12
 - config
 - plugins: maven-surefire-plugin, allure
+- jdk corretto 11.0.15
