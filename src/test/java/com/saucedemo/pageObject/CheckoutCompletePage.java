@@ -14,8 +14,8 @@ import static org.junit.Assert.assertEquals;
 
 public class CheckoutCompletePage extends CartPage {
     //Order Completion Label Locator
-    @FindBy(xpath = "//h2[text()='THANK YOU FOR YOUR ORDER']")
-    private WebElement checkText;
+    @FindBy(css = ".complete-header")
+    private WebElement checkMessageText;
 
     //Element initialization constructor
     public CheckoutCompletePage() {
@@ -24,9 +24,9 @@ public class CheckoutCompletePage extends CartPage {
 
     @Step("Method of checking that the order is completed")
     public void checkMessage() {
-        String expected = ConfigProvider.MESSAGE_COMPLETED_ORDER;
+        String expectedMessage = ConfigProvider.MESSAGE_COMPLETED_ORDER;
         String expectedUrl = ConfigProvider.URL_COMPLETED_ORDER;
-        assertEquals("Order completed message is not correct", expected, checkText.getText());
+        assertEquals("Order completed message is not correct", expectedMessage, checkMessageText.getText());
         assertEquals("Expected to match given URL", expectedUrl, driver.getCurrentUrl());
     }
 }
