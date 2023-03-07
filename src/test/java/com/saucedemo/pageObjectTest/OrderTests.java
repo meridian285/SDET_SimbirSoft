@@ -9,7 +9,7 @@ import readProperties.ConfigProvider;
 /**
  * Test class for testing order creation
  */
-public class PurchaseTests extends BaseTest {
+public class OrderTests extends BaseTest {
 
     @Test
     @DisplayName("Checking a successful purchase")
